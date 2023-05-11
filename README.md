@@ -29,4 +29,18 @@ DESCRIPTION
      ssh connects and logs into the specified destination, which may be speci‐
      fied as either [user@]hostname or a URI of the form
 ```
+Если есть подобный вывод, то на устройстве есть SSH-клиент.
+2. Подключение к удаленному серверу через SSH-клиент.
+Для тренировочного примера взят сервер, выдаваемый на курсе по Linux.
+`ssh -p 55078 b06106nn@remote.vdi.mipt.ru`
+После ввода этой команды появится поле, куда надо ввести пароль:
+`b06106nn@remote.vdi.mipt.ru's password:`
+Надо ввести пароль, после чего появится информация об успешном присоединении к серверу.
+```
+Linux s1088.vdi.mipt.ru 4.9.0 #1 SMP Tue Jan 25 12:49:12 MSK 2022 x86_64
 
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+```
+3. 
