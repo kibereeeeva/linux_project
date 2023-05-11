@@ -4,7 +4,8 @@
 Для установки SSH-соединения, необходимо знать адрес SSH-сервера и иметь SSH-клиент в shell. SSH-клиент это программа для доступа к удаленной машине. Она позволяет установить зашифрованную защищенную коммуникацию между двумя хостами даже через небезопасную сеть. Ниже представлены шаги, позволяющие выполнить поставленную задачу.
 ### Шаги
 1. Проверить, есть ли SSH-клиент: `man ssh`
-`SSH(1)                    BSD General Commands Manual                   SSH(1)
+```
+SSH(1)                    BSD General Commands Manual                   SSH(1)
 
 NAME
      ssh — OpenSSH remote login client
@@ -26,5 +27,6 @@ DESCRIPTION
      can also be forwarded over the secure channel.
 
      ssh connects and logs into the specified destination, which may be speci‐
-     fied as either [user@]hostname or a URI of the form`
+     fied as either [user@]hostname or a URI of the form
+```
 
