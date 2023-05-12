@@ -32,9 +32,12 @@ DESCRIPTION
 Если есть подобный вывод, то на устройстве есть SSH-клиент.
 2. Подключение к удаленному серверу через SSH-клиент.
 Для тренировочного примера взят сервер, выдаваемый на курсе по Linux.
+
 `ssh -p 55078 b06106nn@remote.vdi.mipt.ru`
 После ввода этой команды появится поле, куда надо ввести пароль:
+
 `b06106nn@remote.vdi.mipt.ru's password:`
+
 Надо ввести пароль, после чего появится информация об успешном присоединении к серверу.
 ```
 Linux s1088.vdi.mipt.ru 4.9.0 #1 SMP Tue Jan 25 12:49:12 MSK 2022 x86_64
@@ -44,10 +47,14 @@ the exact distribution terms for each program are described in the
 individual files in /usr/share/doc/*/copyright.
 ```
 3. Проверим, есть ли на сервере что-то связанное с jupyter
+
 `which jupyter`. 
+
 Если есть, то выведет путь до jupyter в формате /path/to/jupyter, а если нет, то ничего не выведет.
 4. Определим PID для jupyter
+
 ```ps -ax | grep jupyter-lab``` | ```ps -ax | grep jupyter-notebook```
+
 Выбрать можно любой из вариантов. Вывод будет в формате:
 ```
  72 pts/0    S+     0:00 grep --color=auto jupyter-lab
