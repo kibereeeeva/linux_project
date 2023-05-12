@@ -43,4 +43,15 @@ The programs included with the Debian GNU/Linux system are free software;
 the exact distribution terms for each program are described in the
 individual files in /usr/share/doc/*/copyright.
 ```
-3. 
+3. Проверим, есть ли на сервере что-то связанное с jupyter
+`which jupyter`. 
+Если есть, то выведет путь до jupyter в формате /path/to/jupyter, а если нет, то ничего не выведет.
+4. Определим PID для jupyter
+```ps -ax | grep jupyter-lab``` | ```ps -ax | grep jupyter-notebook```
+Выбрать можно любой из вариантов. Вывод будет в формате:
+```
+ 72 pts/0    S+     0:00 grep --color=auto jupyter-lab
+```
+PID в данном случае - 72.
+5. По полученному PID определяем порт.
+`lsof -i tcp | grep '72'`
