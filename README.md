@@ -53,5 +53,6 @@ individual files in /usr/share/doc/*/copyright.
  72 pts/0    S+     0:00 grep --color=auto jupyter-lab
 ```
 PID в данном случае - 72.
+
 5. По полученному PID определяем порт.
 `lsof -i tcp | grep '72'`
